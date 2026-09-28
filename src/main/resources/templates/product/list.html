@@ -320,7 +320,9 @@
                     </span>
 
                     <!-- EJERCICIO 5.9 -->
-                    <span class="recommendation--no">
+                    <span class="recommendation--no" th:class="${prod.inStock and prod.price <= 5} ?
+                    'recommendation--yes' :
+                    'recommendation--no'">
                         Recomendado
                     </span>
                 </footer>
